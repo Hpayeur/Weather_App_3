@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="Styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device=width, intital-scale=1.0">
+    <title>The Weather App</title>
+  </head>
+  <body>
+    <header>
+      <img class="Logo" src="Images_8/News_Icon.png">
+      <h1>The Weather App</h1></header>
+    <nav class="Line">
+      <ul>
+        <li class="Colored-Box"><a href="index.html" class="home"> Home </a></li>
+        <li><a href="LatestNews.html" class="news"> News </a></li>
+        <li><a href="index.html" class="Weather">Weather</a></li>
+        <li class="About"><a href="About.html" class="About Us"> About </a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="One">
+        <h2>Latest Weather Summary</h2>
+        <h3>Tooele, UT</h3>
+        <h4>Today's Weather</h4>
+        <div id="weather-data">
+            <ul>
+          <li>Currently: Cloudy</li>
+          <li>Current Tempature: 59°</li>
+          <li>Feels Like: 57°</li>
+          <li>Highs: 60°</li>
+          <li>Lows: 42°</li>
+          <li>Humidity: 30%</li>
+          <li>Wind Speed: 1 mph</li>
+        </ul>
+          <img src="Images_8/Real_Cloudy_Weather.jpg">
+        </div>
+      </section>
+      <div class="Two">
+        <h3>5 Day Weather Forcast</h3>
+        <h4>Salt Lake City, UT</h4>
+      </div>
+        <section class="Three">
+        <div class="flex-col">
+          <span id="dayTitle1" class="col-head">Thrusday</span>
+          <img
+            id="weatherIcon1"
+            class="weatherIcon"
+            src="Images_8/Sunny_Weather.jpg"
+            alt="sunny-weathericon"
+          />
+          <span class="temp-data">
+            <span id="data1">67</span> <span>°F</span>
+          </span>
+        </div>
+        <div class="flex-col">
+          <span id="dayTitle2" class="col-head">Friday</span>
+          <img id="weatherIcon2" class="weatherIcon" src="Images_8/PartlyCloudy1.jpg">
+          <span class="temp-data">
+            <span id="data2">64</span> <span>°F</span>
+          </span>
+        </div>
+        <div class="flex-col">
+          <span id="dayTitle3" class="col-head">Saturday</span>
+        <img id="weatherIcon3" class="weatherIcon" src="Images_8/PartlyCloudy1.jpg">
+          <span class="temp-data">
+            <span id="data3">60</span> <span>°F</span>
+          </span>
+        </div>
+        <div class="flex-col">
+          <span id="dayTitle4" class="col-head">Sunday</span>
+         <img id="weatherIcon4" class="weatherIcon" src="Images_8/Snow_Weather1.jpg">
+          <span class="temp-data">
+            <span id="data4">48</span> <span>°F</span>
+          </span>
+        </div>
+        <div class="flex-col">
+          <span id="dayTitle5" class="col-head">Monday</span>
+          <img id="weatherIcon5" class="weatherIcon" src="Images_8/Raining1.jpg">
+          <span class="temp-data">
+            <span id="data5">43</span> <span>°F</span>
+          </span>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        2025 / Hailee Payeur
+        <a href="https://tooeletech.edu" target="_blank"
+          >Tooele Technical College</a
+        >
+        <br />
+        Last Updated: Wed Nov 12 ,2025
+      </p>
+    </footer>
+  </body>
+</html>

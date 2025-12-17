@@ -1,0 +1,413 @@
+header{
+    background-color: #634040;
+    padding: 5px;
+    text-align: left;
+    position:relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header h1 {
+    color: #cc8787;
+    border: 3px solid #8b7070;
+    border-radius: 15px;
+    padding: 12px 24px;
+    display:inline-block;
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+.Logo{
+  position: relative;
+  float:left;
+  margin-right: 10px;
+}
+
+body {
+    background-color: #8b6363;
+}
+
+.Line {
+position: relative;
+padding: 4px;
+top: 2px;
+z-index: 1;
+background:#503434;
+}
+
+.Line ul{
+ white-space: nowrap;
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.Line li {
+  width: 10%;
+  display: inline-block;
+  font-size: 30px;
+}
+
+.Line li a{
+    Text-decoration: none;
+    color:#8b6363
+}
+
+.Line li a:hover{
+text-decoration: none;
+}
+
+main p{
+  position: relative;
+    background-color: #795656;
+  margin: 50px 50px 50px 50px;
+  padding: 100px  100px 100px 100px;
+font-style: oblique;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.3em;
+}
+
+.Colored-Box {
+  background-color: #664343;
+  border: 1px;
+  padding: 4px 1px;
+ margin-left: -41px;
+}
+
+.About {
+float:right;
+}
+
+main{
+  position: relative;
+}
+.One {
+  background-color: #795656;
+  margin: 5px 10px 15px 10px;
+}
+.One h2{
+  background-color: #8b6363;
+  display: flex;
+  flex-direction:column;
+  position: relative;
+  margin-top: 15px;
+  padding: 10px;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+}
+.One h3 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 5px;
+    font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  font-weight: bold;
+   padding-right: 15px;
+  padding-left: 15px;
+}
+.One h4{
+    display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 5px;
+    font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  font-weight: light;
+   padding-right: 15px;
+  padding-left: 15px;
+}
+
+.One img{
+  text-align: center;
+  display:flex;
+  margin: 0 auto;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+   padding-right: 15px;
+  padding-left: 15px;
+}
+
+.One ul{
+ display: flex;
+  flex-direction:column;
+  position: relative;
+  margin-top: -50px;
+   padding-right: 15px;
+  padding-left: 15px;
+}
+
+.One li{
+  list-style-type: none;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+#weather-data {
+    display: flex;              
+    align-items: flex-start;    
+    gap: 20px;                  
+  }
+
+  #weather-data img {
+    max-width: 250px;           
+    height: 160px;
+    display: block;
+    padding: 10px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+  }
+
+  #weather-data ul {
+    margin: 0;                  
+    padding-left: 20px;         
+  }
+
+.Two {
+  background-color: #795656;
+display:flex;
+flex-direction: row;
+flex-flow:column wrap;
+justify-content: center;
+  margin: 50px 15px 10px 10px;
+  align-items: flex-start;
+}
+
+.Two h3 {
+  display:flex;
+  Flex-direction:column;
+  justify-content: center;
+  flex-wrap:nowrap;
+  align-self: center;
+  order: 1;
+ font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.Two h4{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-self: center;
+  order: 2;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.2em;
+  font-weight: light;
+}
+.Three{
+    background-color: #795656;
+display:flex;
+flex-direction: row;
+flex-wrap:wrap;
+justify-content: center;
+  margin: 50px 15px 10px 10px;
+  align-content: space-around;
+gap: 10px 30px;
+row-gap: 30px;
+column-gap: 30px
+}
+
+.flex-col {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-self: center;
+  order: 3;
+   font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+
+}
+.flex-col img{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-self: center;
+  order: 4;
+}
+.temp-data{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-self: flex-end;
+  order: 5;
+  font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.Stories{
+  background-color: #795656;
+  margin: 10px 900px 15px 20px;
+}
+
+.Stories h2{
+  background-color: #8b6363;
+  display: flex;
+  flex-direction:column;
+  position: relative;
+  margin-top: 15px;
+  padding: 10px;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.6em;
+}
+
+.Stories h4 {
+  position: relative;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1em;
+  font-weight: light;
+}
+
+.Stories p{
+position: relative;
+font-style: oblique;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+.Stories img{
+position: relative;
+}
+
+.Stories a{
+position: relative;
+}
+
+#WeatherTale1 h4{
+order: 3;
+display: grid;
+grid-template-columns: none;
+justify-content: flex-start;
+align-items: center;
+width:50%;
+}
+
+#WeatherTale1 img{
+  order: 1;
+display: grid;
+grid-template-columns: none;
+justify-content: flex-start;
+align-items: center;
+width: 40%;
+}
+
+#WeatherTale1 p{
+  order: 4;
+display: grid;
+grid-template-columns: none;
+justify-content: flex-start;
+align-items: center;
+width:50%;
+}
+
+#WeatherTale1 a{
+  order: 2;
+display: grid;
+grid-template-columns: none;
+justify-content: flex-start;
+align-items: center;
+width:50%;
+}
+
+.Stories2{
+  background-color: #795656;
+  margin: 10px 900px 15px 20px;
+}
+
+.Stories2 h4 {
+  position: relative;
+  font-style: oblique;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.1em;
+  font-weight: light;
+}
+
+.Stories2 p{
+position: relative;
+font-style: oblique;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1em;
+}
+
+.Stories2 img{
+position: relative;
+}
+
+.Stories2 a{
+position: relative;
+}
+
+#WeatherTale2 h4{
+order: 3;
+display: grid;
+grid-template-columns: none;
+justify-content: flex-start;
+align-items: center;
+width:50%;
+}
+
+#WeatherTale2 img{
+  order: 1;
+display: grid;
+grid-template-columns: none;
+justify-content: flex-start;
+align-items: center;
+width:40%;
+}
+
+#WeatherTale2 p{
+  order: 4;
+display: grid;
+grid-template-columns: none;
+justify-content: flex-start;
+align-items: center;
+width:50%;
+}
+
+#WeatherTale2 a{
+  order: 2;
+display: grid;
+grid-template-columns: none;
+justify-content: flex-start;
+align-items: center;
+width:50%;
+}
+
+footer {
+    position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #634040;
+  color: #cc8787;
+ font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1.4em;
+  padding: 30px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+footer a {
+  color: #e07979;
+}
