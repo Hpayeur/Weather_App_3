@@ -151,13 +151,13 @@ main {
   font-size: 1em;
 }
 
-#weather-data {
+#WeatherData {
   display: flex;
   align-items: flex-start;
   gap: 20px;
 }
 
-#weather-data img {
+#WeatherData img {
   max-width: 250px;
   height: 160px;
   display: block;
@@ -166,7 +166,7 @@ main {
   margin-bottom: 20px;
 }
 
-#weather-data ul {
+#WeatherData ul {
   margin: 0;
   padding-left: 20px;
 }
