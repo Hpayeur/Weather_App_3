@@ -42,6 +42,27 @@ function displayResults(jsobject) {
     jsobject.wind.speed;
 }
 
+function displayWeatherIcon(jsobject){
+    const { name } = jsobject;
+    const { weather } = jsobject;
+    if (!weather || !weather.length) return;
+
+    const { description, icon } = weather[0];
+    const iconPath = `https://openweathermap.org/img/w/${icon}.png`;
+    let img = document.getElementById('weather-icon');
+    if (!img) {
+        img = document.createElement('img');
+        img.id = 'weather-icon';
+        img.className = 'weather-icon';
+    }
+
+    img.src = iconPath;
+    img.alt = description || `${name} weather icon`;
+    if (!document.getElementById('weather-icon')) {
+        weatherDiv.appendChild(img);
+    }
+}
+
 // stats
 // summary
 // current-desc
