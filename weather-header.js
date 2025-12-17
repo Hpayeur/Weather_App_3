@@ -19,14 +19,6 @@ fetch(URL)
     removeLoadingMessage();
 })
 
-// fetch(URL)
-// .then((response) =>{
-//     if (!response.ok) {
-//         throw Error ("Unknown Error:);")
-//     }
-//     return response.json();
-// })
-
 function displayStats(jsObject){
     document.getElementById('current-temp').textContent = Math.round(jsObject.main.temp);
     document.getElementById('current-desc').textContent = jsObject.weather[0].description;
@@ -34,10 +26,18 @@ function displayStats(jsObject){
     document.getElementById('current-windSpeed').textContent = Math.round(jsObject.wind.speed);
 }
 
+function processWeatherData(data){
+    console.log(data);
+    const description = data.weather[0].description;
+    const temperature = Math.round(data.main.temp);
+    const humidity = data.main.humidity;
+    const windSpeed = Math.round(data.wind.speed);
+    return { description, temperature, humidity, windSpeed };
+}
+
 function displayWeatherData(data){
-    const descElement = document.getElementById('cuurent-desc');
+    const descElement = document.getElementById('current-desc');
     const tempElement = document.getElementById('current-temp');
-    const windChillElement = document.getElementById('current-windChill');
     const humidElement = document.getElementById('current-humid');
     const windSpeedElement = document.getElementById('current-windSpeed');
 
@@ -49,10 +49,10 @@ function displayWeatherData(data){
 
 if (data&& data.main && data.weather && data.wind)
 {
-    descElement.textContect = data.weather[0].description;
-    tempElement.textContect = `${data.main.temp}°F`;
-    humidElement.textContect = `${data.main.humidity}%`;
-    windSpeedElement.textContect = `${data.wind.speed} mph`;
+    descElement.textContent = data.weather[0].description;
+    tempElement.textContent = `${data.main.temp}°F`;
+    humidElement.textContent = `${data.main.humidity}%`;
+    windSpeedElement.textContent = `${data.wind.speed} mph`;
 }
 
 if (data.main.feels_like !== undefined){
