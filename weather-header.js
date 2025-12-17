@@ -32,13 +32,14 @@ function removeLoadingMessage(){
         removeLoadingMessage();
         console.log(jsobject);
     })
-// function displayResults (jsobject){
-//     document.getElementById('stats').textContent = jsobject.name;
-//     document.getElementById('summary').textContent = jsobject.weather[0].description;
-//     document.getElementById('current-temp').textContent = jsobject.main.temp;
-//     document.getElementById('current-humid').textContent = jsobject.main.humidity;
-//     document.getElementById('current-windSpeed').textContent = jsobject.wind.speed;
-// }
+
+function displayResults (jsobject){
+    document.getElementById('stats').textContent = jsobject.name;
+    document.getElementById('summary').textContent = jsobject.weather[0].description;
+    document.getElementById('current-temp').textContent = jsobject.main.temp;
+    document.getElementById('current-humid').textContent = jsobject.main.humidity;
+    document.getElementById('current-windSpeed').textContent = jsobject.wind.speed;
+}
 
 
 // stats
@@ -48,3 +49,15 @@ function removeLoadingMessage(){
 // current-windChill
 // current-humid
 // current-windSpeed
+
+    // let weatherIcon = jsObject.weather;
+    // for (let i = 0; i < weatherIcon.length; i++){
+    //     let iconCode = weatherIcon[i].icon;
+    //     let iconPath = `https://openweathermap.org/img/w/${iconCode}.png`;
+    //     document.getElementById('weather-icon').setAttribute('src', iconPath);
+
+    //     let img= document.createElement(`img`);
+    //     img.src = iconPath;
+    //     img.alt = weatherIcon[i].description;
+    //     img.className = 'weather-icon';
+    //     weatherDiv.appendChild (img);
