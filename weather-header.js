@@ -1,1 +1,1 @@
-// `https://api.openweathermap.org/data/2.5/weather?q=tooele&&units=imperial&appid={23b92e3940da14d9c6d97709e92d951a}`
+// `https://api.openweathermap.org/data/2.5/weather?q=tooele&&units=imperial&appid=690b34bf536e8e5ed7ad088e82607116`
