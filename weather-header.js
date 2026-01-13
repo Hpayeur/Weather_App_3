@@ -14,12 +14,14 @@ fetch(url)
 
 function displayWeatherData(data){
     const summary = document.querySelector('#summary');
-    const currentTemp = document.querySelector('currentTemp');
+    const currentTemp = document.querySelector('#currentTemp');
     const feelsLike = document.querySelector('#feelsLike');
     const highs = document.querySelector('#highs');
     const lows = document.querySelector('#lows')
     const humidity = document.querySelector('#humidity');
     const windSpeed = document.querySelector('#windSpeed');
+
+    console.log(currentTemp);
 
     summary.textContent = `Currently: ${data.weather[0].description}`;
     currentTemp.textContent = `Current Tempature: ${Math.round(data.main.temp)}°`;
